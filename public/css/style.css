@@ -1,0 +1,159 @@
+* {
+    font-family: 'Roboto';
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+.logo {
+    width: 200px;
+    margin: 30px;
+}
+
+header {
+    background-color: #EAC926;
+}
+
+.buscador {
+    margin-left: 20px;
+}
+
+button {
+    width: 20px;
+}
+
+.copy-nav {
+    font-size: 15px;
+    text-align: center;
+    margin: 20px;
+    color: black;
+}
+
+.nav1 {
+    margin-bottom: 20px;
+}
+
+.listas-nav {
+    list-style: none;
+    color: black;
+    text-decoration: none;
+}
+
+.burger-menu {
+    background-color: #1259c3;
+    color: white;
+    display: block;
+    max-width: 50px;
+    padding: 15px 0;
+    border-radius: 8px;
+    text-align: center;
+    font-size: 20px;
+    margin: auto;
+}
+
+.banner {
+    display: none;
+}
+
+body {
+    background-color: #ebebeb;
+    color: #666;
+}
+
+.titulares {
+    font-size: 24px;
+    padding: 15px;
+}
+
+.precio {
+    font-size: 18px;
+    margin: 15px;
+    color: black;
+    width: 30%;
+}
+
+.descuentos {
+    font-size: 16px;
+    color: #39b54a;
+    margin: 15px;
+    width: 70%;
+}
+
+.descripcion {
+    font-size: 16px;
+    padding: 15px;
+}
+
+.caja-precio-descuento {
+    display: flex;
+    flex-direction: row;
+}
+
+main {
+    margin: auto;
+    width: 90vw;
+}
+
+main div section i {
+    display: block;
+    font-size: 16px;
+    padding: 5px;
+    width: 30px;
+    height: 30px;
+    color: #39b54a;
+    border: 1px solid #39b54a;
+    background-color: #FFF;
+    border-radius: 50%;
+    position: absolute;
+    right: 20px;
+    top: -15px;
+}
+
+article {
+    margin: 10px;
+}
+
+main div article {
+    background-color: white;
+    margin: 15px;
+}
+
+.cajas {
+    border-top: 1px solid #ebebeb;
+    background-color: white;
+    position: relative;
+}
+
+p {
+    font-size: 12px
+}
+
+footer article {
+    text-align: center;
+    margin: 40px;
+    color: black;
+}
+
+footer i {
+    font-size: 2em;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
+@media (min-width: 361px) {
+    main div article {
+        box-shadow: 0px 0px 10px rgb(100, 100, 100);
+    }
+
+}
+
+@media (min-width: 769px) {
+    main div article {
+        box-shadow: 0px 0px 10px rgb(100, 100, 100);
+    }
+
+    .banner img {
+        display: block;
+        visibility: visible;
+    }
+}
