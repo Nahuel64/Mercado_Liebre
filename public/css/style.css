@@ -14,7 +14,7 @@
 
 .logo {
     width: 40%;
-    margin: 20px 20px;
+    margin: 10px 10px;
 }
 
 header {
@@ -180,12 +180,12 @@ footer i {
         display: flex;
         justify-content: space-around;
     }
-     
+
     .caja-copy-nav {
         display: flex;
         align-items: center;
         width: 30%;
-        padding: 30px;
+        padding: 0 30px;
     }
 
     .copy-nav {
@@ -193,7 +193,7 @@ footer i {
     }
 
     .buscador {
-        padding: 2px;
+        padding: 10px;
         border-radius: 3px;
     }
 
@@ -226,7 +226,7 @@ footer i {
         overflow: hidden;
         transition: opacity 0.5s, max-height 0.5s;
     }
-    
+
     .main-productos article:hover .descripcion {
         opacity: 1;
         max-height: 200px;
@@ -236,17 +236,21 @@ footer i {
     .main-productos article i {
         transition: transform 0.5s;
     }
-    
+
     .main-productos article:hover i {
         transform: rotate(-90deg);
     }
-    
+
     .main-productos article:not(:hover) i {
         transform: rotate(0);
     }
 }
 
 @media (min-width: 769px) {
+    .logo {
+        width: 20%;
+    }
+
     .productos-mq-escritorio {
         display: flex;
         flex-direction: row;
@@ -254,6 +258,7 @@ footer i {
 
     .buscador {
         width: 30vw;
+        padding: 10px;
     }
 
     footer div {

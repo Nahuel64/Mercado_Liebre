@@ -161,12 +161,12 @@ footer i {
         display: flex;
         justify-content: space-around;
     }
-     
+
     .caja-copy-nav {
         display: flex;
         align-items: center;
         width: 30%;
-        padding: 30px;
+        padding: 0 30px;
     }
 
     .copy-nav {
@@ -174,7 +174,7 @@ footer i {
     }
 
     .buscador {
-        padding: 2px;
+        padding: 10px;
         border-radius: 3px;
     }
 
@@ -200,6 +200,10 @@ footer i {
 }
 
 @media (min-width: 769px) {
+    .logo {
+        width: 20%;
+    }
+
     main div article {
         box-shadow: 0px 0px 10px rgb(100, 100, 100);
     }
@@ -211,6 +215,7 @@ footer i {
 
     .buscador {
         width: 30vw;
+        padding: 10px;
     }
 
     main {
