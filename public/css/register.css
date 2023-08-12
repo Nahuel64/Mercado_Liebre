@@ -115,6 +115,11 @@ form button {
     color: #ffffff;
     padding: 7px;
     margin: 5px 0;
+    cursor: pointer;
+}
+
+form button:hover {
+    background-color: #0022AA;
 }
 
 footer {

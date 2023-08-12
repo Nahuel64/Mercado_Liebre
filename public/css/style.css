@@ -132,6 +132,7 @@ article {
 main div article {
     background-color: white;
     margin: 15px;
+    cursor: pointer;
 }
 
 .cajas {
@@ -221,16 +222,15 @@ footer i {
 
     .descripcion {
         opacity: 0;
-        visibility: hidden;
-        position: absolute;
-        transition: opacity 0.5s;
+        max-height: 0;
+        overflow: hidden;
+        transition: opacity 0.5s, max-height 0.5s;
     }
     
     .main-productos article:hover .descripcion {
         opacity: 1;
-        visibility: visible;
-        position: relative;
-        transition: opacity 0.5s;
+        max-height: 200px;
+        transition: opacity 0.5s, max-height 0.5s;
     }
 
     .main-productos article i {
