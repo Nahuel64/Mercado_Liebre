@@ -5,21 +5,28 @@
     box-sizing: border-box;
 }
 
+.caja-logo-buscador {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
 .logo {
-    width: 200px;
+    width: 40%;
     margin: 30px;
 }
 
 header {
     background-color: #EAC926;
+    padding: 5px 0;
 }
 
 .buscador {
-    margin-left: 20px;
-}
-
-button {
-    width: 20px;
+    width: 90%;
+    padding: 10px;
+    border: none;
+    font-size: 15px;
+    border-radius: 8px;
 }
 
 .copy-nav {
@@ -29,8 +36,8 @@ button {
     color: black;
 }
 
-.nav1 {
-    margin-bottom: 20px;
+.barra-nav {
+    display: none;
 }
 
 .listas-nav {
@@ -43,16 +50,19 @@ button {
     background-color: #1259c3;
     color: white;
     display: block;
-    max-width: 50px;
-    padding: 15px 0;
+    height: 40px;
+    width: 40px;
+    padding: 7px 0;
     border-radius: 8px;
     text-align: center;
     font-size: 20px;
     margin: auto;
+    margin-bottom: 10px;
+    justify-content: center;
 }
 
-.banner {
-    display: none;
+.banner img {
+    width: 100vw;
 }
 
 body {
@@ -92,6 +102,11 @@ body {
 main {
     margin: auto;
     width: 90vw;
+}
+
+.main-productos {
+    display: flex;
+    flex-direction: column;
 }
 
 main div section i {
@@ -138,11 +153,55 @@ footer i {
     font-size: 2em;
     margin-bottom: 10px;
     margin-top: 10px;
+    color: #1259c3;
 }
 
-@media (min-width: 361px) {
+@media (min-width: 461px) {
     main div article {
         box-shadow: 0px 0px 10px rgb(100, 100, 100);
+    }
+
+    .productos-mq-tablet {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .burger-menu {
+        display: none;
+    }
+
+    .top-header {
+        display: flex;
+    }
+     
+    .caja-copy-nav {
+        display: flex;
+        align-items: center;
+        margin-right: 50px;
+    }
+
+    .copy-nav {
+        margin: 0;
+    }
+
+    .buscador {
+        padding: 2px;
+        border-radius: 3px;
+    }
+
+    .barra-nav {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .barra-nav ul {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .barra-nav ul a {
+        padding: 10px 15px;
     }
 
 }
@@ -152,8 +211,12 @@ footer i {
         box-shadow: 0px 0px 10px rgb(100, 100, 100);
     }
 
-    .banner img {
-        display: block;
-        visibility: visible;
+    .productos-mq-escritorio {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .buscador {
+        width: 30vw;
     }
 }
