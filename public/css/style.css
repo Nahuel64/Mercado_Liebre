@@ -166,10 +166,6 @@ footer i {
 }
 
 @media (min-width: 461px) {
-    main div article {
-        box-shadow: 0px 0px 10px rgb(100, 100, 100);
-    }
-
     .productos-mq-tablet {
         display: flex;
         flex-direction: row;
@@ -215,13 +211,42 @@ footer i {
         padding: 10px 15px;
     }
 
-}
+    .main-productos article {
+        transition: box-shadow .5s
+    }
 
-@media (min-width: 769px) {
-    main div article {
+    .main-productos article:hover {
         box-shadow: 0px 0px 10px rgb(100, 100, 100);
     }
 
+    .descripcion {
+        opacity: 0;
+        visibility: hidden;
+        position: absolute;
+        transition: opacity 0.5s;
+    }
+    
+    .main-productos article:hover .descripcion {
+        opacity: 1;
+        visibility: visible;
+        position: relative;
+        transition: opacity 0.5s;
+    }
+
+    .main-productos article i {
+        transition: transform 0.5s;
+    }
+    
+    .main-productos article:hover i {
+        transform: rotate(-90deg);
+    }
+    
+    .main-productos article:not(:hover) i {
+        transform: rotate(0);
+    }
+}
+
+@media (min-width: 769px) {
     .productos-mq-escritorio {
         display: flex;
         flex-direction: row;
